@@ -57,6 +57,8 @@ public class User implements Serializable {
 
 	private int totalPrivateRepos;
 
+	private String gravatarId;
+
 	private String avatarUrl;
 
 	private String blog;
@@ -270,6 +272,22 @@ public class User implements Serializable {
 		this.totalPrivateRepos = totalPrivateRepos;
 		return this;
 	}
+
+	/**
+   	 * @return gravatarId
+   	 */
+   	public String getGravatarId() {
+   		return gravatarId;
+   	}
+
+   	/**
+   	 * @param gravatarId
+   	 * @return this user
+   	 */
+   	public User setGravatarId(String gravatarId) {
+   		this.gravatarId = gravatarId;
+   		return this;
+   	}
 
 	/**
 	 * @return avatarUrl
